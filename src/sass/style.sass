@@ -1,0 +1,851 @@
+@import "resets.scss"
+@import "normalizes.scss"
+
+
+
+@font-face
+    font-family: "ManropeE"
+    src: url('../fonts/Manrope-Regular.ttf')
+    font-weight: regular
+    font-style: normal
+@font-face
+    font-family: "VollkornN"
+    src: url('../fonts/Vollkorn-Regular.ttf')
+    font-weight: regular
+    font-style: normal
+html
+    font-family:  "ManropeE"
+
+
+.container
+    max-width: 1300px
+    padding: 0
+
+.main-section
+    min-height: 885px
+    overflow: hidden
+    &__svg
+        position: absolute
+        top: 600px
+        right: 103px
+.main-section__nav-container
+    height: 107px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    margin: 0
+.nav-menu__list
+    display: flex
+    flex-direction: row
+    list-style-type: none
+    margin-bottom: 46px
+    margin-top: 46px
+.header-img
+    position: absolute
+    top: 40px
+    height: 25px
+    width: 27px
+.nav-menu__list-item
+    padding-right: 80px
+    &:last-child
+        padding-right: 0
+.main-section-header
+    margin-left: 92px
+    margin-right: 100px
+    margin-bottom: 42 px
+    margin-top: 40px
+
+.main-section-menu
+    margin-right: 39px
+    margin-bottom: 43px
+    margin-top: 44px
+    margin-left: 152px
+
+.nav-line
+    width: 100%
+    height: 1px
+    background-color: black
+    margin-bottom: 164px
+.span
+    color: rgba(131, 30, 210, 1)
+.wrapper-container
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+.left-wrapper
+    width: 640px
+    height: 284px
+    margin-left: 92px
+    position: relative
+    margin-bottom: 165px
+    &__text
+        width: Hug (236.05px)
+        margin-left: 60px
+        font-size: 18px
+    &__title
+        font-size: 130px
+        margin: 0 auto
+        font-family: "VollkornN"
+    &__line
+        position: absolute
+        top: 8px
+    &__elipse
+        position: absolute
+        top: -40px
+        left: -230px
+        z-index: -5
+
+.right-wrapper
+    width: 486px
+    height: 198px
+    margin-top: 86px
+    margin-right: 76px
+    position: relative
+    &__line
+
+        margin-bottom: 16px
+    &__text
+        font-size: 24px
+        line-height: initial
+    &__ellipse
+        position: absolute
+        top: -360px
+        right: -140px
+        z-index: -5
+.line
+    width: 39.05px
+    height: 3px
+    background-color: black
+.nav-link
+    width: 151px
+    border: none
+    background: transparent
+    padding: 0
+    color: black
+    font-weight: 15px
+.nav-item
+    width: 151px
+    margin-right: px
+    background-color: transparent
+
+.nav-justified
+
+.main-section__tab
+
+
+.nav-tabs
+    --bs-nav-tabs-link-active-bg: transparent
+    --bs-nav-tabs-link-active-border-color: transparent transparent black
+    font-weight: 400
+
+.nav
+    --bs-nav-link-font-weight: 20px
+    --bs-nav-link-hover-color: black (--bs-link-hover-color)
+    padding-left: 344px
+    padding-right: 482px
+    margin-bottom: 25.22px
+.button
+.active
+    font-weight: 800 !important
+
+.card
+    min-width: 608px
+    padding-top: 9px
+    padding-left: 10px
+    --bs-card-border-width: none
+.img-wrapper__img
+    margin-right: 30px
+.card-img-top
+    width: 588px
+    margin: 0 auto
+.card-wrapper
+    margin-bottom: 87px
+.img-wrapper
+    margin-bottom: 153px
+.card1
+    margin-bottom: 43px
+.third-wrapper
+    margin-bottom: 123px
+.footer
+    min-height: 91px
+.footer__nav-line
+    margin-bottom: 39px
+.footer__text
+    text-align: center
+.footer__text-line
+    width: 85px
+    height: 1px
+    color: black
+    margin: 0
+    margin-left: 50%
+    margin-bottom: 39px
+.card-title
+    font-size: 28px
+    font-weight: 800
+    font-family: "VollkornN"
+.card-text
+    font-size: 16px
+    font-weight: 400
+.column-img1
+    width: 350px
+    height: 502px
+.column-img2
+    width: 713px
+    height: 502px
+.col-item1
+    width: 350px
+    margin: 0 auto
+    padding: 0
+.col-item2
+    padding: 0
+    width: 713px
+    margin: 0 auto
+.row
+    margin-bottom: 30px
+    
+.column-img3
+    width: 713px
+    height: 502px
+
+.column-img4
+    width: 350px
+    height: 500px
+    margin: 0 auto
+.col-item3
+    width: 713px
+    height: 502px
+    margin: 0 auto
+    padding: 0
+.col-item4
+    width: 350px
+    margin: 0 auto
+    padding: 0
+.col-item5
+    width: 488px
+    padding: 0
+    margin: 0 auto
+.col-item6
+    width: 488px
+    padding: 0
+    margin: 0 auto
+.column-img5
+    width: 488px
+    height: 761px
+.hamburger
+    width: 24px
+    height: 24px
+    z-index: 20
+    position: absolute
+    right: 100px
+    top: 47px
+    span
+        height: 2px
+        width: 70%
+        display: block
+        background: black
+        margin-bottom: 4px
+        transition: 1s all
+        &:nth-child(2)
+            width: 50%
+        &:last-child
+            margin-bottom: 0
+.hamburger_active
+    position: fixed
+    span
+        margin-bottom: -2px
+        background: white
+        &:nth-child(1)
+            transform: translateY(3px) rotate(-45deg)
+        &:nth-child(2)   
+            display: none
+        &:nth-child(3)
+            transform: translateY(3px) rotate(45deg)
+
+            
+
+
+.hamburger-nav
+    width: 100%
+    height: 100vh
+    background-color: #1E1E1E
+    z-index: 10
+    position: fixed
+    top: 1px
+    right: -100%
+    transition: 1s all
+.hamburger-nav__active
+    right: 0px
+    display: block
+.nav__right-wrapper
+    width: 591px
+    height: 388.02px
+    margin-top: 253px
+    margin-left: 90px
+    margin-right: 346px
+    margin-bottom: 244.83px
+
+.nav__right-wrapper__item
+    padding: 0
+    font-size: 108.42px
+    font-weight: 500
+    color: white
+    text-decoration: none
+    margin-bottom: 60.51 px
+    &:last-child
+            margin-bottom: 0
+
+.nav_left-wrapper
+    width: 144px
+    height: 204px
+    margin-top: 341px
+    margin-right: 269px
+
+.nav__left-wrapper__item
+    padding: 0
+    font-size: 24px
+    font-weight: 400
+    color: white
+    text-decoration: none
+    margin-bottom: 16px
+    &:last-child
+            margin-bottom: 0
+
+a:hover
+    color: white
+.nav_left-wrapper__title
+    font-weight: 600
+    margin-bottom: 40px
+    color: white
+    font-size: 24px
+    padding: 0
+.close
+    position: absolute
+    color: white
+    font-size: 24px
+    font-weight: 400
+    top: 36px
+    right: 140px
+.industry
+    border-radius: 100px
+    width: 66px
+    height: 26px
+    border: 1px solid black
+    margin-top: 33px
+
+.industry-text
+    font-size: 12px
+    text-align: center
+    color: black
+    margin-top: 5px
+.filterDiv
+    display: none
+.show
+    display: block
+.btn
+    border: none
+    outline: none
+    padding: 1px 16px
+    background-color:
+    cursor: pointer
+    --bs-btn-border-radius: 100px
+    --bs-btn-font-size: 12px
+    width: 103px
+    height: 26px
+    margin-bottom: 100px
+
+.btn:hover
+    background-color: #666
+    color: white
+.btn.active
+    background-color: #666
+    color: white
+.btn-container
+    padding-left: 363px
+.btn-title
+    position: absolute
+    left: 202px
+    top: 772px
+@media (max-width: 1199px)   
+    .container
+        width: 960px
+        
+    .main-section-menu
+        margin-left: 52px
+        margin-right: -109px
+    .main-section-header 
+        margin-left: 50px
+        margin-right: 130px
+    .hamburger
+        right: 80px
+    .left-wrapper
+        margin-right: 30px
+        margin-left: 50px
+    .left-wrapper__title 
+        font-size: 100px
+    .right-wrapper
+        margin-right: 26px
+        margin-top: 66px
+    .nav 
+        padding-right: 100px
+        margin-top: 100px
+        padding-left: 100px
+        margin-bottom: 50px
+    .btn-title 
+        left: 120px
+        top: 895px
+    .btn-container 
+        padding-left: 250px
+    .main-section__svg
+        top: 650px
+    .nav-menu__list-item 
+        padding-right: 100px
+    .card
+        min-width: 408px
+    .card-img-top
+        width: 408px
+    .column-img2
+        width: 500px
+        height: 400px
+    .right-wrapper__ellipse 
+        top: -460px
+        right: -240px
+        
+    .col-item2
+        width: 500px
+        height: 400px
+        margin: 0 auto
+    .column-img1
+        width: 300px
+        height: 400px
+    .col-item1 
+        width: 300px
+        margin: 0 auto
+        height: 400px
+    .row
+        margin: 0 auto
+        margin-bottom: 50px
+    .column-img3
+        width: 500px
+        height: 400px
+    .col-item3 
+        width: 500px
+        margin: 0 auto
+        height: 400px
+        
+    .column-img4 
+        width: 300px
+        height: 400px
+        padding: 0
+    .col-item4
+        width: 300px
+        height: 400px
+        margin: 0 auto
+        padding: 0
+    .img-wrapper__img
+        width: 300px
+    .column-img5 
+        width: 400px
+        height: 500px
+    .col-item5
+        width: 400px
+        height: 500px
+        margin: 0 auto
+        
+    .col-item6
+        width: 400px
+        height: 500px
+        margin: 0 auto
+    .nav__right-wrapper__item
+        font-size: 75px
+        padding-bottom: 40px
+    .nav__right-wrapper
+        margin-top: 200px
+        width: 400px
+    .nav_left-wrapper
+        margin-top: 250px
+@media  (max-width: 991px)
+    .container
+        width: 720px
+    .main-section-header 
+        margin-left: 20px
+        margin-right: 100px
+    .nav-menu__list-item 
+        padding-right: 80px
+    .hamburger
+        right: 50px
+    .main-section-menu
+        margin-right: -160px
+        margin-left: 2px
+    .left-wrapper
+        margin-left: 30px
+        margin-top: 30px
+        margin-right: 10px
+    .left-wrapper__title 
+        font-size: 80px
+    .right-wrapper__text
+        width: 320px
+    .main-section__svg 
+        top: 650px
+        right: 40px
+    .right-wrapper__ellipse 
+        top: -560px
+        right: -340px
+    .btn-container 
+        padding-left: 200px
+    .nav 
+        padding-left: 40px
+        padding-right: 30px
+        margin-top: 40px
+    .btn
+        width: 80px
+    .btn-title
+        left: 110px
+        top: 865px
+    .card-img-top 
+        width: 308px
+    .card 
+        min-width: 308px
+    .img-wrapper__img 
+        width: 250px
+        padding-right: 10px
+    .right-wrapper 
+        margin-right: 10px
+    .column-img1 
+        width: 250px
+        height: 300px
+    .column-img2 
+        width: 400px
+        height: 300px
+        margin: 0 auto
+    .col-item1 
+        width: 250px
+        margin: 0 auto
+        height: 300px
+    .col-item2 
+        width: 400px
+        height: 300px
+        margin: 0 auto
+    .row 
+        margin: 0 
+        justify-content: space-evenly
+        margin-bottom: 50px
+    .col-item3 
+        width: 400px
+        margin: 0 auto
+        height: 300px
+    .column-img3 
+        width: 400px
+        height: 300px
+        margin: 0 auto
+    .col-item3 
+        width: 400px
+        margin: 0
+    .column-img4 
+        width: 250px
+        height: 300px
+    .col-item4 
+        width: 250px
+        height: 300px
+        padding: 0
+        margin: 0
+    .column-img5 
+        width: 400px
+        height: 500px
+        margin-bottom: 50px
+    .col-item5
+        margin-bottom: 30px
+    .nav__right-wrapper__item 
+        font-size: 65px
+        padding-bottom: 30px
+        width: 500px
+    .nav__right-wrapper 
+        padding-top: 100px
+        padding-left: 30px
+        padding-bottom: 100px
+        margin: 0
+    .nav_left-wrapper 
+        margin-top: 100px
+        margin-right: 70px
+        margin-left: 240px
+@media (max-width: 767px) 
+    .container
+        width: 540px
+    .main-section-header 
+        margin-left: 20px
+        margin-right: 100px
+    .nav-menu__list-item 
+        padding-right: 40px
+    .hamburger
+        right: 40px
+    .main-section-menu 
+        margin-left: 32px
+        margin-right: -140px
+    .right-wrapper
+        display: none
+    .btn-container 
+        padding-left: 363px
+        display: none
+    .left-wrapper 
+        display: block
+        margin-left: 30px
+    .left-wrapper__title 
+        font-size: 100px
+    .main-section__svg
+        right: 23px
+        top: 500px
+    .nav
+        padding-left: 70px
+        padding-right: 70px
+    .card-wrapper
+        flex-direction: column !important
+    .card 
+        margin: 0 auto
+        margin-bottom: 30px
+    .img-wrapper 
+        margin-bottom: 30px
+        flex-direction: column !important
+    .img-wrapper__img
+        height: 320px
+        width: 300px
+        margin: 0 auto
+        margin-bottom: 30px
+        padding: 0
+    .third-wrapper
+        flex-direction: column
+    .column-img1 
+        width: 400px
+        height: 400px
+        margin: 0 auto
+    .col-item1
+        width: 400px
+        margin: 0 auto
+        margin-bottom: 30px
+    .col-item2
+        height: 350px
+        margin-bottom: 30px
+    .column-img2 
+        width: 400px
+        height: 350px
+        margin: 0 auto
+        margin-bottom: 30px
+    .row 
+        margin: 0 auto
+    .col-item3
+        width: 400px
+        margin: 0 auto
+        margin-bottom: 30px
+        height: 400px
+    .column-img3
+        width: 400px
+        margin: 0 auto
+        height: 400px
+        
+    .column-img4
+        width: 400px
+        margin: 0 auto
+        height: 400px
+       
+    .col-item4
+        width: 400px
+        margin: 0 auto
+        height: 400px
+        margin-bottom: 30px
+    .column-img5
+        width: 400px
+        margin: 0 auto
+        
+    .col-item5
+        width: 400px
+        margin: 0 auto
+        margin-bottom: 30px
+    .col-item6
+        width: 400px
+        margin: 0 auto
+        margin-bottom: 60px
+    .nav_left-wrapper
+        display: none
+    .nav__right-wrapper 
+        padding-left: 0px
+        padding-top: 80px
+    .nav__right-wrapper__item 
+        font-size: 45px
+        margin-bottom: 0px
+    .close
+        right: 100px
+    .left-wrapper__elipse 
+        position: absolute
+        top: -240px
+        left: -250px
+    
+
+@media (max-width: 575px)   
+    .container
+        width: 100%
+    .main-section
+        height: 3800px
+    .header-img
+        left: 15px
+    .hamburger
+        right: 10px
+    .nav-menu__list-item
+        padding: 0
+        &:nth-child(1)
+            display: none
+        &:nth-child(3)
+            display: none
+    .main-section-header
+        margin-right: 90px
+    .span
+        color: black
+        padding: 0
+    .main-section-menu
+        margin-left: 20px
+        margin-right: 40px
+        font-size: 20px
+    .wrapper-container
+        flex-direction: column
+    .left-wrapper
+        width: 320px
+        margin-left: 10px
+        margin-bottom: 350px
+        height: 84px
+    .left-wrapper__title 
+        font-size: 60px
+    .nav-line 
+        margin-bottom: 155px
+    .left-wrapper__text
+        margin-bottom: 10px
+    .line
+        height: 2px
+        width: 27px
+    .left-wrapper__text
+        margin-left: 40px
+    .right-wrapper
+        width: 320px
+        height: 156px
+    .right-wrapper__text
+        font-size: 16px
+        width: 300px
+        margin-left: 10px
+    .right-wrapper__line 
+        margin-left: 10px
+    .right-wrapper__ellipse 
+        top: -600px
+        right: -320px
+        width: 600px
+    .main-section__svg 
+        top: 600px
+        right: 10px
+        width: 70px
+    .btn-container
+        display: none
+    .nav
+        padding-left: 5px
+        padding-right: 10px
+    .main-section__tab
+        margin-top: 20px
+    .nav-item
+        font-size: 15px
+    .card-wrapper
+        flex-direction: column !important
+    .card 
+        min-width: 300px
+        margin: 0 auto
+        padding: 0
+        margin-bottom: 30px
+    .card-img-top 
+        width: 300px
+        height: 250px
+    footer
+        height: 120px
+    .footer__nav-line
+        margin-bottom: 55px
+    .img-wrapper
+        flex-direction: column !important
+    .third-wrapper
+        flex-direction: column !important 
+    .img-wrapper__img 
+        margin: 0 auto
+        margin-bottom: 20px
+        height: 300px
+    .row 
+        margin: 0 auto
+        padding: 0 
+        width: 300px
+    .col-item1
+        margin: 0 auto
+        margin-bottom: 70px
+        
+    .column-img2
+        width: 300px
+        margin: 0 auto
+        margin-bottom: 40px
+    .column-img1
+        margin-bottom: 40px
+        width: 300px
+        height: 350px
+    .col-item3
+        margin: 0 auto
+        height: 402px
+        margin-bottom: 80px
+    .column-img3
+        margin: 0 auto
+        width: 300px
+        height: 452px
+    .col-item4 
+        margin: 0 auto
+        width: 300px
+        margin-top: px
+        padding: 0
+        height: 452px
+        margin-right: 0
+    .column-img4 
+        width: 300px
+        margin: 0 auto
+        height: 452px
+
+    .col-item5 
+        width: 300px
+        height: 400px
+        margin: 0 auto
+    .column-img5 
+        width: 300px
+        height: 401px
+        margin-top: 60px
+    .img-wrapper 
+        margin-bottom: 53px
+    .card-wrapper 
+        margin-bottom: 10px
+    .col-item6 
+        width: 300px
+        margin: 0 auto
+        margin-top: 40px
+    .nav_left-wrapper
+        display: none
+    .nav__right-wrapper
+        width: 262px
+        height: 395px
+        padding-top: 50px
+    .nav__right-wrapper__item
+        font-size: 48px
+        padding-bottom: 20px
+    .close
+        right: 70px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
